@@ -2,7 +2,7 @@ const github = 'https://github.com/pactumjs/pactum';
 const releases = 'https://github.com/pactumjs/pactum/releases';
 const packages = 'https://www.npmjs.com/package/pactum';
 const twitter = 'https://twitter.com/pactumjs';
-const telegram = 'https://t.me/openuds';
+const telegram = 'https://t.me/xsystech_ru';
 
 import { createWriteStream } from 'node:fs';
 import { resolve } from 'node:path';
@@ -15,34 +15,18 @@ const home_sidebar = [
     text: 'Документация (EN)',
     collapsed: false,
     items: [
-      { text: 'Installation & Administration Guide v3.6', link: '/admin_guide_36.html' },
-      { text: 'Configuring in High Availability v3.5 (Active-Passive)', link: '/ha_guide_35.html' },
-      { text: 'Configuring in High Availability v3.6 (Active-Active)', link: '/ha_guide_36.html' },
-      { text: 'Logs Guide v3.5', link: '/logs_guide_35.html' }
+      { text: 'Руководство по установке', link: '/install_guide.html' },
+      { text: 'Руководство Администратора', link: '/admin_guide.html' },
+      { text: 'Руководство Пользователя', link: '/user_guide.html' }
     ]
   },
   {
-    text: 'Документация (RU)',
+    text: 'Общие данные',
     collapsed: false,
     items: [
-      { text: 'Установка и администрирование v3.6', link: '/admin_guide_36_ru.html' },
-      { text: 'Настройка высокой доступности v3.5 (Active-Passive)', link: '/ha_guide_35_ru.html' },
-      { text: 'Руководство по REST API v3.5', link: '/rest_api_v35.html' },
-      { text: 'Продукты на основе OpenUDS', link: '/openuds_products.html' }
-    ]
-  },
-  {
-    text: 'Медиа',
-    collapsed: false,
-    items: [
-      { text: 'Видео-руководства по установке', link: '/media_library.html' },
-    ]
-  },
-    {
-    text: 'Задать вопрос',
-    collapsed: false,
-    items: [
-      { text: 'Telegram-чат', link: 'https://t.me/openuds/' },
+      { text: 'Технические характеристики', link: '/datasheet.html' },
+      { text: 'Управление жизненным циклом', link: '/lifecycle.html' },
+      { text: 'Регламент технческой поддержки', link: '/support.html' }
     ]
   }
 ];
@@ -238,17 +222,17 @@ const api_sidebar = [
  * @type {import('vitepress').UserConfig}
  */
 const config = defineConfig({
-  title: 'OpenUDS Docs',
-  description: 'OpenUDS Documentation Library, Installation and Administration Guide, User Guide. Документация OpenUDS, руководство по установке, настройке и использованию.',
+  title: 'XSYSTECH KB',
+  description: 'База знаний XSYSTECH',
   lastUpdated: true,
   ignoreDeadLinks: true,
   head: [
-    ['meta', { property: 'og:title', content: 'OpenUDS Docs' }],
-    ['meta', { property: 'og:description', content: 'OpenUDS Documentation Library, Installation and Administration Guide, User Guide. Документация OpenUDS, руководство по установке, настройке и использованию.' }],
-    ['meta', { property: 'og:image', content: 'https://static.tildacdn.com/tild3734-3265-4538-b936-633063623136/apple-icon.png' }],
+    ['meta', { property: 'og:title', content: 'XSYSTECH KB' }],
+    ['meta', { property: 'og:description', content: 'База знаний XSYSTECH' }],
+    ['meta', { property: 'og:image', content: 'https://static.tildacdn.com/tild3035-3132-4632-a630-323561373565/1126228.png' }],
   ],
   themeConfig: {
-    logo: 'https://static.tildacdn.com/tild3734-3265-4538-b936-633063623136/apple-icon.png',
+    logo: 'https://static.tildacdn.com/tild3035-3132-4632-a630-323561373565/1126228.png',
     search: {
       provider: 'local'
     },
@@ -262,8 +246,8 @@ const config = defineConfig({
         '/': home_sidebar,
     },
     footer: {
-      message: 'OpenUDS Professional',
-      copyright: 'Copyright © 2024'
+      message: 'XSYSTECH.RU',
+      copyright: 'Copyright © 2025'
     },
   },
   markdown: {
