@@ -12,9 +12,10 @@ const links: Array<{url: string, lastmod?: number}> = []
 
 const home_sidebar = [
   {
-    text: 'Документация (EN)',
+    text: 'Документация Director',
     collapsed: false,
     items: [
+      { text: 'Технические характеристики', link: '/datasheet.html' },
       { text: 'Руководство по установке', link: '/install_guide.html' },
       { text: 'Руководство Администратора', link: '/admin_guide.html' },
       { text: 'Руководство Пользователя', link: '/user_guide.html' }
@@ -24,7 +25,7 @@ const home_sidebar = [
     text: 'Общие данные',
     collapsed: false,
     items: [
-      { text: 'Технические характеристики', link: '/datasheet.html' },
+      
       { text: 'Управление жизненным циклом', link: '/lifecycle.html' },
       { text: 'Регламент технческой поддержки', link: '/support.html' }
     ]
