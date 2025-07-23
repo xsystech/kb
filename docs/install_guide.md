@@ -14,19 +14,19 @@ chmod +x xrmd_install.sh
 
 ### Автоматическая установка (требует sudo):
 
-# Облегченная версия с CPU (рекомендуется для большинства случаев)
+Облегченная версия с CPU (рекомендуется для большинства случаев)
 ```bash
 sudo ./xrmd_install.sh install slim cpu
 ```
-# Полная версия с CPU (больше возможностей, больше ресурсов)
+Полная версия с CPU (больше возможностей, больше ресурсов)
 ```bash
 sudo ./xrmd_install.sh install full cpu
 ```
-# Облегченная версия с GPU (требуется NVIDIA GPU)
+Облегченная версия с GPU (требуется NVIDIA GPU)
 ```bash
 sudo ./xrmd_install.sh install slim gpu
 ```
-# Полная версия с GPU (максимальная производительность)
+Полная версия с GPU (максимальная производительность)
 ```bash
 sudo ./xrmd_install.sh install full gpu
 ```
