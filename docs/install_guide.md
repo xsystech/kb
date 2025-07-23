@@ -94,4 +94,5 @@ ragflow-redis    2025-07-23 18:37:39 +0300 MSK   Up 10 minutes (healthy)
 ollama           2025-07-23 18:16:01 +0300 MSK   Up 32 minutes
 ```
 
+Для дальнейшей работы с системой XRM Director смотрите раздел [Руководство Пользователя](https://kb.xsystech.ru/user_guide.html)
 
