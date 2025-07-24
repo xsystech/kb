@@ -38,12 +38,12 @@ chmod +x xrmd_install.sh
 
 ### CLI Режим (Командная строка)
 
-
 #### Команды справки (без sudo):
 ```bash
 # Показать справку
 ./xrmd_install.sh --help
-
+```
+```bash
 # Показать версию скрипта
 ./xrmd_install.sh --version
 ```
@@ -52,13 +52,16 @@ chmod +x xrmd_install.sh
 ```bash
 # Облегченная версия с CPU (рекомендуется для большинства случаев)
 sudo ./xrmd_install.sh install slim cpu
-
+```
+```bash
 # Полная версия с CPU (больше возможностей, больше ресурсов)
 sudo ./xrmd_install.sh install full cpu
-
+```
+```bash
 # Облегченная версия с GPU (требуется NVIDIA GPU)
 sudo ./xrmd_install.sh install slim gpu
-
+```
+```bash
 # Полная версия с GPU (максимальная производительность)
 sudo ./xrmd_install.sh install full gpu
 ```
@@ -78,7 +81,7 @@ PROCESSOR:
 
 ### Интерактивный режим (Меню)
 
-Классический режим с пошаговым меню для интерактивной установки:
+#### Классический режим с пошаговым меню для интерактивной установки:
 
 ```bash
 # Запустите скрипт с правами администратора
