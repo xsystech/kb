@@ -281,7 +281,7 @@ sudo ./xrmd_install.sh
 ✅ XRM Director успешно установлен!
 📁 Установочная директория: /opt/xrm-director/docker/
 📋 Логи: /var/log/xrmd_install.log
-
+```
 ---
 
 ### 5️⃣ Перезапустить XRM Director
