@@ -35,7 +35,7 @@ wget -O xrmd_install.sh https://files.x-rm.ru/xrm_director/xrmd_install.sh
 chmod +x xrmd_install.sh
 ```
 
-### CLI Режим (Командная строка)
+### CLI Режим (Командная строка) <a name="#-cli-режим-командная-строка">
 
 
 #### Команды справки (без sudo):
