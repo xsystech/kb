@@ -16,9 +16,9 @@ const home_sidebar = [
     collapsed: false,
     items: [
       { text: 'Технические характеристики', link: '/datasheet.html' },
-      { text: 'Руководство по установке', link: '/install_guide.html' },
-      { text: 'Руководство Администратора', link: '/admin_guide.html' },
-      { text: 'Руководство Пользователя', link: '/user_guide.html' }
+      { text: 'Руководство по установке', link: '/install_guide_v11.html' },
+      { text: 'Руководство Администратора', link: '/admin_guide_v11.html' },
+      { text: 'Руководство Пользователя', link: '/user_guide_v11.html' }
     ]
   },
   {
