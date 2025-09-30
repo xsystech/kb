@@ -1,4 +1,4 @@
-# Руководство Администратора по работе со скриптом xrmd_install.sh - XRM Director v1.0 на Red OS 8.0
+# Руководство Администратора по работе со скриптом xrmd_install_v_1_1.sh - XRM Director v1.1 на Red OS 8.0
 
 
 - [Общая информация](#-общая-информация)
@@ -54,11 +54,11 @@
 ### Подготовка системы
 ```bash
 # Загрузка установочного скрипта
-wget -O xrmd_install.sh https://files.x-rm.ru/xrm_director/xrmd_install.sh
+wget -O xrmd_install_v_1_1.sh https://files.x-rm.ru/xrm_director/xrmd_install_v_1_1.sh
 ```
 ```bash
 # Установка прав на выполнение скрипта
-chmod +x xrmd_install.sh
+chmod +x xrmd_install_v_1_1.sh
 ```
 
 ### CLI Режим (Командная строка)<a id="-cli-режим-командная-строка"></a>
@@ -66,34 +66,34 @@ chmod +x xrmd_install.sh
 #### Команды справки (без sudo):
 ```bash
 # Показать справку
-./xrmd_install.sh --help
+./xrmd_install_v_1_1.sh --help
 ```
 ```bash
 # Показать версию скрипта
-./xrmd_install.sh --version
+./xrmd_install_v_1_1.sh --version
 ```
 
 #### Автоматическая установка (требует sudo):
 ```bash
 # Облегченная версия с CPU (рекомендуется для большинства случаев)
-sudo ./xrmd_install.sh install slim cpu
+sudo ./xrmd_install_v_1_1.sh install slim cpu
 ```
 ```bash
 # Полная версия с CPU (больше возможностей, больше ресурсов)
-sudo ./xrmd_install.sh install full cpu
+sudo ./xrmd_install_v_1_1.sh install full cpu
 ```
 ```bash
 # Облегченная версия с GPU (требуется NVIDIA GPU)
-sudo ./xrmd_install.sh install slim gpu
+sudo ./xrmd_install_v_1_1.sh install slim gpu
 ```
 ```bash
 # Полная версия с GPU (максимальная производительность)
-sudo ./xrmd_install.sh install full gpu
+sudo ./xrmd_install_v_1_1.sh install full gpu
 ```
 
 #### Синтаксис CLI команд:
 ```
-sudo ./xrmd_install.sh install <VERSION> <PROCESSOR>
+sudo ./xrmd_install_v_1_1.sh install <VERSION> <PROCESSOR>
 
 VERSION:
   slim    - Облегченная версия (~2.62 GB, без встроенных моделей)
@@ -110,14 +110,14 @@ PROCESSOR:
 
 ```bash
 # Запустите скрипт с правами администратора
-sudo ./xrmd_install.sh
+sudo ./xrmd_install_v_1_1.sh
 ```
 
 ## Подробное описание меню<a id="-подробное-описание-меню"></a>
 
 #### Главное меню (Интерактивный режим)
 
-После запуска скрипта `sudo ./xrmd_install.sh` вы увидите главное меню:
+После запуска скрипта `sudo ./xrmd_install_v_1_1.sh` вы увидите главное меню:
 
 ```
 ==========================================
@@ -255,8 +255,11 @@ sudo reboot
 - ✅ Настройка переменных окружения в `.env`
 - ✅ Развертывание контейнеров XRM Director в системе
 - ✅ Проверка запуска и состояние контейнеров
-- ✅ Развертывание Ollama
-- ✅ Установка моделей в Ollama
+- ✅ Развертывание llm-server
+- ✅ Установка моделей в llm-server
+- ✅ Установка xinference
+- ✅ Установка модели реранкинга в xinference
+- ✅ Загрузка и парсинг файла базы знаний
 
 #### Схема структуры директорий
 ```
@@ -273,7 +276,7 @@ sudo reboot
 ```
 #### Запуск LLM контейнеров
 
-- Установка и запуск Ollama с моделями:
+- Установка и запуск llm-server с моделями:
   - **llama3.1:8b** (основная языковая модель)
   - **snowflake-arctic-embed:335m** (модель для embeddings)
 - Проверка готовности сервисов
@@ -283,7 +286,7 @@ sudo reboot
 - **80** - HTTP доступ к веб-интерфейсу RAGFlow
 - **443** - HTTPS доступ (если настроен)
 - **9380** - Внутренний порт RAGFlow
-- **11434** - Ollama API
+- **11434** - llm-server API
 
 **Сообщение при успешном завершении установки:**
 ```
@@ -301,12 +304,12 @@ sudo reboot
 
 #### 5.1 Проверка текущего состояния
 - Анализ запущенных контейнеров
-- Проверка состояния контейнера Ollama
+- Проверка состояния контейнера llm-server
 - Диагностика проблем при необходимости
 
 #### 5.2 Перезапуск сервисов
 - Перезапуск всех контейнеров
-- Перезапуск контейнера Ollama
+- Перезапуск контейнера llm-server
 - Проверка статуса после перезапуска
 - Health check всех контейнеров
 
@@ -319,12 +322,10 @@ sudo reboot
 **⚠️ ВНИМАНИЕ! Это действие необратимо!**
 
 #### 6.1 Процесс удаления
-- Остановка всех контейнеров, в т.ч. Ollama
+- Остановка всех контейнеров
 - Удаление контейнеров
 - Удаление Docker томов (пользовательские данные)
 - Удаление Docker образов:
-  - `infiniflow/ragflow:*` (все версии RAGFlow)
-  - `ollama/ollama` (Ollama)
 - Опциональное удаление директорий:
   - `/opt/xrm-director/` (конфигурация)
   - `/opt/xrm-director/backups/` (резервные копии)
@@ -445,11 +446,12 @@ q. Отмена
 
 ### Docker образы:
 - **RAGFlow** - основная система (`infiniflow/ragflow:v0.19.1` или `infiniflow/ragflow:v0.19.1-slim`)
-- **Ollama** - сервер языковых моделей (`ollama/ollama`)
+- **llm-server** - сервер языковых моделей
 
-### Модели Ollama:
-- **llama3.1:8b** - основная языковая модель для обработки запросов
+### Модели llm-server:
+- **saiga_gemma3_12b-Q4_K_S-GGUF** - основная языковая модель для обработки запросов
 - **snowflake-arctic-embed:335m** - модель для создания векторных представлений
+- **bge-reranker-base** - rerank модель
 
 ---
 
@@ -474,8 +476,7 @@ tail -f /var/log/xrmd_install.log
 # Логи RAGFlow
 docker logs -f ragflow-server
 
-# Логи Ollama
-docker logs -f ollama
+
 ```
 
 ---
