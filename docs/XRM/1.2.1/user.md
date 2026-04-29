@@ -2,7 +2,7 @@
 
 ***
 
-<figure><img src="../../../.gitbook/assets/xrm_amin.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="/XRM/assets/xrm_amin.gif" alt=""><figcaption></figcaption></figure>
 
 **X Recovery Manager (XRM)** - это платформа для автоматизации аварийного восстановления виртуализованных сервисов после сбоя, предназначенная для автоматизации следующих операций:
 
