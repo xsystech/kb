@@ -18,22 +18,22 @@ const home_sidebar = [
     {text: 'Описание функциональных характеристик', link: '/XRM/datasheet.html' },
     {text: 'Системные требования', link: '/XRM/requirements.html' },
     {text: 'История версий', link: '/XRM/history.html' },
-    {text: 'XRM версия 1.2.1', base: '/XRM/', collapsed: true,
+    {text: 'XRM версия 1.2.1', base: '/1.2.1/', collapsed: true,
               items: [ 
-                {text: 'Инструкция по установке', link: '/../datasheet.html' },
-                {text: 'Руководство пользователя', link: '/../datasheet.html' },
+                {text: 'Инструкция по установке', link: '/install.html' },
+                {text: 'Руководство пользователя', link: '/user.html' },
                 {text: 'Руководство администратора (модуль xrm_ovirt)', base: '/admin/', collapsed: true,  
                 items: [
-                  {text: 'Начальная настройка', link: '/../datasheet.html' },
-                  {text: 'Создание и запуск планов восстановления', link: '/../datasheet.html' },
-                  {text: 'Руководство по внедрению в среде oVirt', link: '/../datasheet.html' },
+                  {text: 'Начальная настройка', link: '/start.html' },
+                  {text: 'Создание и запуск планов восстановления', link: '/dr-plans.html' },
+                  {text: 'Руководство по внедрению в среде oVirt', link: '/implementation.html' },
                   ]
                 
                 },
-                {text: 'Установка/изменение пароля администратора', link: '/../datasheet.html' },
-                {text: 'Установка Docker на российские ОС', link: '/../datasheet.html' },
-                {text: 'Установка XRM на РЕД ОС', link: '/../datasheet.html' },
-                {text: 'Удаление XRM', link: '/../datasheet.html' },
+                {text: 'Установка/изменение пароля администратора', link: '/password.html' },
+                {text: 'Установка Docker на российские ОС', link: '/docker.html' },
+                {text: 'Установка XRM на РЕД ОС', link: '/install-redos.html' },
+                {text: 'Удаление XRM', link: '/remove.html' },
              ]
     }
     ]
