@@ -16,7 +16,7 @@ const home_sidebar = [
     collapsed: true,
     items: [
     {text: 'Технические характеристики', link: 'XRM/datasheet.html' },
-    {text: 'Руководство админстратора', base: '/XRM/,
+    {text: 'Руководство админстратора', base: '/XRM/',
       items: [{ text: 'Технические характеристики', link: 'datasheet.html' },
              ] 
   },
