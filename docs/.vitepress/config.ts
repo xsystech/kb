@@ -18,11 +18,11 @@ const home_sidebar = [
     {text: 'Описание функциональных характеристик', link: '/XRM/datasheet.html' },
     {text: 'Системные требования', link: '/XRM/requirements.html' },
     {text: 'История версий', link: '/XRM/history.html' },
-    {text: 'XRM версия 1.2.1', base: '/1.2.1/', collapsed: true,
+    {text: 'XRM версия 1.2.1', base: '/XRM/1.2.1/', collapsed: true,
               items: [ 
                 {text: 'Инструкция по установке', link: '/install.html' },
                 {text: 'Руководство пользователя', link: '/user.html' },
-                {text: 'Руководство администратора (модуль xrm_ovirt)', base: '/1.2.1/admin/', collapsed: true,  
+                {text: 'Руководство администратора (модуль xrm_ovirt)', base: '/XRM/1.2.1/admin/', collapsed: true,  
                 items: [
                   {text: 'Начальная настройка', link: '/start.html' },
                   {text: 'Создание и запуск планов восстановления', link: '/dr-plans.html' },
