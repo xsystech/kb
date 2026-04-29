@@ -18,15 +18,22 @@ const home_sidebar = [
     {text: 'Описание функциональных характеристик', link: '/XRM/datasheet.html' },
     {text: 'Системные требования', link: '/XRM/requirements.html' },
     {text: 'История версий', link: '/XRM/history.html' },
-    {text: 'Руководство админстратора', base: '/XRM/',
-      items: [{ text: 'Технические характеристики', link: 'datasheet.html' },
-              { text: 'Еще характеристики', base: '/XRM/More/', collapsed: true,
+    {text: 'XRM версия 1.2.1', base: '/XRM/', collapsed: true,
               items: [ 
-                {text: 'Технические характеристики 1', link: '/../datasheet.html' },
-                {text: 'Технические характеристики 2', link: '/../datasheet.html' }
+                {text: 'Инструкция по установке', link: '/../datasheet.html' },
+                {text: 'Руководство пользователя', link: '/../datasheet.html' },
+                {text: 'Руководство администратора (модуль xrm_ovirt)', base: '/admin/', collapsed: true,  
+                items: [
+                  {text: 'Начальная настройка', link: '/../datasheet.html' },
+                  {text: 'Создание и запуск планов восстановления', link: '/../datasheet.html' },
+                  {text: 'Руководство по внедрению в среде oVirt', link: '/../datasheet.html' },
+                  ]
                 
-              ]
-              },
+                },
+                {text: 'Установка/изменение пароля администратора', link: '/../datasheet.html' },
+                {text: 'Установка Docker на российские ОС', link: '/../datasheet.html' },
+                {text: 'Установка XRM на РЕД ОС', link: '/../datasheet.html' },
+                {text: 'Удаление XRM', link: '/../datasheet.html' },
              ]
     }
     ]
