@@ -16,12 +16,13 @@ const home_sidebar = [
     collapsed: true,
     items: [
     {text: 'Технические характеристики', link: '/XRM/datasheet.html' },
+    {text: 'Технические характеристики', link: '/XRM/datasheet.html' },
     {text: 'Руководство админстратора', base: '/XRM/',
       items: [{ text: 'Технические характеристики', link: 'datasheet.html' },
               { text: 'Еще характеристики', base: '/XRM/More/', collapsed: true,
               items: [ 
-                {text: 'Технические характеристики 1', link: '/XRM/datasheet.html' },
-                {text: 'Технические характеристики 2', link: '/XRM/datasheet.html' }
+                {text: 'Технические характеристики 1', link: '/../datasheet.html' },
+                {text: 'Технические характеристики 2', link: '/../datasheet.html' }
                 
               ]
               },
