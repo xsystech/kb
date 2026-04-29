@@ -11,7 +11,17 @@ import { defineConfig } from 'vitepress';
 const links: Array<{url: string, lastmod?: number}> = []
 
 const home_sidebar = [
+  { 
+    text: 'Документация Director',
+    collapsed: true,
+    items: [
+    {text: 'Технические характеристики', link: 'XRM/datasheet.html' },
+    {text: 'Руководство админстратора', base: '/XRM/,
+      items: [{ text: 'Технические характеристики', link: 'datasheet.html' },
+             ] 
+  },
   {
+    
     text: 'Документация Director',
     collapsed: false,
     items: [
