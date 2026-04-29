@@ -22,7 +22,7 @@ const home_sidebar = [
               items: [ 
                 {text: 'Инструкция по установке', link: '/install.html' },
                 {text: 'Руководство пользователя', link: '/user.html' },
-                {text: 'Руководство администратора (модуль xrm_ovirt)', base: '/admin/', collapsed: true,  
+                {text: 'Руководство администратора (модуль xrm_ovirt)', base: '/1.2.1/admin/', collapsed: true,  
                 items: [
                   {text: 'Начальная настройка', link: '/start.html' },
                   {text: 'Создание и запуск планов восстановления', link: '/dr-plans.html' },
