@@ -19,6 +19,7 @@ const home_sidebar = [
     {text: 'Руководство админстратора', base: '/XRM/',
       items: [{ text: 'Технические характеристики', link: 'datasheet.html' },
              ]
+    }
     ]
   },
   {
