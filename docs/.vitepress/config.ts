@@ -12,7 +12,7 @@ const links: Array<{url: string, lastmod?: number}> = []
 
 const home_sidebar = [
   { 
-    text: 'Документация XRM',
+    text: 'Документация XRM (oVirt)',
     collapsed: false,
     items: [
     {text: 'Описание функциональных характеристик', link: '/XRM/datasheet.html' },
