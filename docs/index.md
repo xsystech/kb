@@ -15,5 +15,5 @@ features:
   - title: 🚀 Руководства и инструкции
     details: <a href="/readme.html">База знаний</a>
   
-footer: XSYSTECH.RU | Copyright © 2025
+footer: XSYSTECH.RU | Copyright © 2026
 ---
