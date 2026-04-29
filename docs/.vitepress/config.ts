@@ -13,7 +13,7 @@ const links: Array<{url: string, lastmod?: number}> = []
 const home_sidebar = [
   { 
     text: 'Документация XRM',
-    collapsed: true,
+    collapsed: false,
     items: [
     {text: 'Описание функциональных характеристик', link: '/XRM/datasheet.html' },
     {text: 'Системные требования', link: '/XRM/requirements.html' },
