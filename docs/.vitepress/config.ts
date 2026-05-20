@@ -21,12 +21,13 @@ const home_sidebar = [
     {text: 'XRM версия 1.2.1', base: '/XRM/1.2.1/', collapsed: true,
               items: [ 
                 {text: 'Инструкция по установке', link: '/install.html' },
-                {text: 'Руководство пользователя', link: '/user.html' },
-                {text: 'Руководство администратора (модуль xrm_ovirt)', base: '/XRM/1.2.1/admin/', collapsed: true,  
+                {text: 'Руководство администратора', base: '/XRM/1.2.1/admin/', collapsed: true,  
                 items: [
                   {text: 'Начальная настройка', link: '/start.html' },
-                  {text: 'Создание и запуск планов восстановления', link: '/dr-plans.html' },
-                  {text: 'Руководство по внедрению в среде oVirt', link: '/implementation.html' },
+                  {text: 'Подключение и управление брокерами', link: '/connect.html' },
+                  {text: 'Настройка групп брокеров', link: '/groups.html' },
+                  {text: 'Создание и запуск заданий переноса', link: '/jobs.html' },
+                  {text: 'Руководство по внедрению в среде OpenUDS', link: '/implementation.html' },
                   ]
                 
                 },
