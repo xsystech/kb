@@ -45,7 +45,7 @@ const home_sidebar = [
     {text: 'Описание функциональных характеристик', link: '/XRMD/datasheet.html' },
     {text: 'Системные требования', link: '/XRMD/requirements.html' },
     {text: 'История версий', link: '/XRMD/history.html' },
-    {text: 'XRM версия 1.2.1', base: '/XRMD/1.1.0/', collapsed: true,
+    {text: 'XRMD версия 1.1.0', base: '/XRMD/1.1.0/', collapsed: true,
               items: [ 
                 {text: 'Инструкция по установке', link: '/install.html' },
                 {text: 'Руководство пользователя', link: '/user.html' },
