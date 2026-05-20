@@ -21,13 +21,12 @@ const home_sidebar = [
     {text: 'XRM версия 1.2.1', base: '/XRM/1.2.1/', collapsed: true,
               items: [ 
                 {text: 'Инструкция по установке', link: '/install.html' },
+                {text: 'Руководство пользователя', link: '/user.html' },
                 {text: 'Руководство администратора', base: '/XRM/1.2.1/admin/', collapsed: true,  
                 items: [
                   {text: 'Начальная настройка', link: '/start.html' },
-                  {text: 'Подключение и управление брокерами', link: '/connect.html' },
-                  {text: 'Настройка групп брокеров', link: '/groups.html' },
-                  {text: 'Создание и запуск заданий переноса', link: '/jobs.html' },
-                  {text: 'Руководство по внедрению в среде OpenUDS', link: '/implementation.html' },
+                  {text: 'Создание и запуск планов восстановления', link: '/dr-plans.html' },
+                  {text: 'Руководство по внедрению в среде oVirt', link: '/implementation.html' },
                   ]
                 
                 },
@@ -49,19 +48,18 @@ const home_sidebar = [
     {text: 'XRMD версия 1.1.0', base: '/XRMD/1.1.0/', collapsed: true,
               items: [ 
                 {text: 'Инструкция по установке', link: '/install.html' },
-                {text: 'Руководство пользователя', link: '/user.html' },
-                {text: 'Руководство администратора (модуль xrm_ovirt)', base: '/XRMD/1.1.0/admin/', collapsed: true,  
+                {text: 'Руководство администратора', base: '/XRMD/1.1.0/admin/', collapsed: true,  
                 items: [
                   {text: 'Начальная настройка', link: '/start.html' },
-                  {text: 'Создание и запуск планов восстановления', link: '/dr-plans.html' },
-                  {text: 'Руководство по внедрению в среде oVirt', link: '/implementation.html' },
+                  {text: 'Подключение и управление брокерами', link: '/connect.html' },
+                  {text: 'Настройка групп брокеров', link: '/groups.html' },
+                  {text: 'Создание и запуск заданий переноса', link: '/jobs.html' },
+                  {text: 'Руководство по внедрению в среде OpenUDS', link: '/implementation.html' },
                   ]
                 
                 },
-                {text: 'Установка/изменение пароля администратора', link: '/password.html' },
                 {text: 'Установка Docker на российские ОС', link: '/docker.html' },
-                {text: 'Установка XRM на РЕД ОС', link: '/install-redos.html' },
-                {text: 'Удаление XRM', link: '/remove.html' },
+                {text: 'Удаление XRMD', link: '/remove.html' },
              ]
     }
     ]
