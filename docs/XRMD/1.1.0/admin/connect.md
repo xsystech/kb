@@ -17,7 +17,7 @@
 
 Ниже расположена таблица зарегистрированных брокеров. Через этот экран администратор выполняет добавление новых брокеров, изменение параметров подключения и переход к управлению выбранной площадкой.
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/XRMD/assets/connect1.png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Добавление основного брокера
 
@@ -36,7 +36,7 @@
 * `Добавить` — сохранить нового брокера;
 * `Отмена` — закрыть форму без сохранения.
 
-<figure><img src="../../../../.gitbook/assets/add_broker.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/XRMD/assets/connect2.png" alt=""><figcaption></figcaption></figure>
 
 В демонстрационном сценарии первым подключается `Broker1`, который используется как основная площадка.
 
@@ -48,7 +48,7 @@
 
 После сохранения оба брокера должны отобразиться в общем списке и стать доступными для дальнейшей настройки.
 
-<figure><img src="../../../../.gitbook/assets/list_broker.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/XRMD/assets/connect3.png" alt=""><figcaption></figcaption></figure>
 
 ### 4. Проверка доступности брокеров
 
@@ -83,7 +83,7 @@
 
 Кнопка **Change** в правой части панели позволяет вернуться обратно в интерфейс XRM Director и выбрать другой зарегистрированный брокер для открытия через **Управление**. Это удобно, когда администратору необходимо последовательно проверить несколько площадок и быстро переключаться между ними из единой точки управления.
 
-<figure><img src="../../../../.gitbook/assets/switch_broker.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="/XRMD/assets/connect4.gif" alt=""><figcaption></figcaption></figure>
 
 ### 6. Проверка основной площадки
 
@@ -99,7 +99,7 @@
 
 Оба пула имеют статус `Active`.
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/XRMD/assets/connect5.png" alt=""><figcaption></figcaption></figure>
 
 ### 7. Проверка резервной площадки
 
@@ -109,7 +109,7 @@
 
 В демонстрационном сценарии на резервном брокере изначально отсутствуют `testpool` и `test2pool`.
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/XRMD/assets/connect6.png" alt=""><figcaption></figcaption></figure>
 
 ### 8. Результат этапа
 
