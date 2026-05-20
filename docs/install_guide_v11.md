@@ -110,4 +110,4 @@ xinference_rerank   2025-09-29 10:12:43 +0000 UTC   Up 24 hours
 llm-server          2025-09-29 10:04:06 +0000 UTC   Up 24 hours
 ```
 
-Для дальнейшей работы с системой ПК Director смотрите раздел [Руководство Пользователя](https://kb.xsystech.ru/user_guide.html)
+Для дальнейшей работы с системой ПК Director смотрите раздел [Руководство Пользователя](https://kb.xsystech.ru/user_guide_v11.html)
