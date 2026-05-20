@@ -12,7 +12,7 @@ const links: Array<{url: string, lastmod?: number}> = []
 
 const home_sidebar = [
   { 
-    text: 'Документация XRM (oVirt)',
+    text: 'Документация XRM (для серверной виртуализации)',
     collapsed: false,
     items: [
     {text: 'Описание функциональных характеристик', link: '/XRM/datasheet.html' },
@@ -38,9 +38,40 @@ const home_sidebar = [
     }
     ]
   },
+  { 
+    text: 'Документация XRM (для VDI)',
+    collapsed: false,
+    items: [
+    {text: 'Описание функциональных характеристик', link: '/XRMD/datasheet.html' },
+    {text: 'Системные требования', link: '/XRMD/requirements.html' },
+    {text: 'История версий', link: '/XRMD/history.html' },
+    {text: 'XRM версия 1.2.1', base: '/XRMD/1.1.0/', collapsed: true,
+              items: [ 
+                {text: 'Инструкция по установке', link: '/install.html' },
+                {text: 'Руководство пользователя', link: '/user.html' },
+                {text: 'Руководство администратора (модуль xrm_ovirt)', base: '/XRMD/1.1.0/admin/', collapsed: true,  
+                items: [
+                  {text: 'Начальная настройка', link: '/start.html' },
+                  {text: 'Создание и запуск планов восстановления', link: '/dr-plans.html' },
+                  {text: 'Руководство по внедрению в среде oVirt', link: '/implementation.html' },
+                  ]
+                
+                },
+                {text: 'Установка/изменение пароля администратора', link: '/password.html' },
+                {text: 'Установка Docker на российские ОС', link: '/docker.html' },
+                {text: 'Установка XRM на РЕД ОС', link: '/install-redos.html' },
+                {text: 'Удаление XRM', link: '/remove.html' },
+             ]
+    }
+    ]
+  },
+
+
+
+  
   {
     
-    text: 'Документация Director',
+    text: 'Документация ПК Director',
     collapsed: false,
     items: [
       { text: 'Технические характеристики', link: '/datasheet.html' },
