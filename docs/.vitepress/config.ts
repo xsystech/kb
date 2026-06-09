@@ -77,7 +77,8 @@ const home_sidebar = [
       { text: 'Технические характеристики', link: '/datasheet.html' },
       { text: 'Руководство по установке', link: '/install_guide_v11.html' },
       { text: 'Руководство Администратора', link: '/admin_guide_v11.html' },
-      { text: 'Руководство Пользователя', link: '/user_guide_v11.html' }
+      { text: 'Руководство Пользователя', link: '/user_guide_gui_v11.html' },
+      { text: 'Руководство CLI', link: '/user_guide_v11.html' }
     ]
   },
   {
