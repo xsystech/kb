@@ -15,10 +15,10 @@
 
 Используемые образы:
 
-* `xrmtech/xrm-director-backend:beta_0.2.7`
-*   `xrmtech/xrm-director-frontend:beta_0.2.7`
+* `xrmtech/xrm-director-backend:1.2.1`
+*   `xrmtech/xrm-director-frontend:1.2.1`
 
-    <div data-gb-custom-block data-tag="hint" data-style="warning" class="hint hint-warning"><p>Если для версии XRM Director 1.1.0 должны использоваться другие теги контейнерных образов, замените их в файле <code>docker-compose.yml</code> до запуска.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="warning" class="hint hint-warning"><p>Если для версии XRM Director 1.2.1 должны использоваться другие теги контейнерных образов, замените их в файле <code>docker-compose.yml</code> до запуска.</p></div>
 
 ### Предварительные условия
 
@@ -110,7 +110,7 @@ EOF
 ```bash
 services:
   backend:
-    image: xrmtech/xrm-director-backend:beta_0.2.7
+    image: xrmtech/xrm-director-backend:1.2.1
     ports:
       - "8001:8001"
     volumes:
@@ -120,7 +120,7 @@ services:
       - ./backend/db:/app/db
 
   frontend:
-    image: xrmtech/xrm-director-frontend:beta_0.2.7
+    image: xrmtech/xrm-director-frontend:1.2.1
     ports:
       - "80:80"
 
@@ -135,7 +135,7 @@ networks:
 cat > /opt/xrmd/docker-compose.yml << 'EOF'
 services:
   backend:
-    image: xrmtech/xrm-director-backend:beta_0.2.7
+    image: xrmtech/xrm-director-backend:1.2.1
     ports:
       - "8001:8001"
     volumes:
@@ -145,7 +145,7 @@ services:
       - ./backend/db:/app/db
 
   frontend:
-    image: xrmtech/xrm-director-frontend:beta_0.2.7
+    image: xrmtech/xrm-director-frontend:1.2.1
     ports:
       - "80:80"
 
@@ -187,8 +187,8 @@ docker compose ps -a
 
 ```
 CONTAINER ID   IMAGE                                      COMMAND                  CREATED      STATUS                    PORTS                                         NAMES
-d2735dcd514a   xrmtech/xrm-director-frontend:beta_0.2.7   "/docker-entrypoint.…"   6 days ago   Up 24 seconds             0.0.0.0:80->80/tcp, [::]:80->80/tcp           xrmd_install-frontend-1
-d5add673f488   xrmtech/xrm-director-backend:beta_0.2.7    "uvicorn main:app --…"   6 days ago   Up 24 seconds             0.0.0.0:8001->8001/tcp, [::]:8001->8001/tcp   xrmd_install-backend-1
+d2735dcd514a   xrmtech/xrm-director-frontend:1.2.1   "/docker-entrypoint.…"   6 days ago   Up 24 seconds             0.0.0.0:80->80/tcp, [::]:80->80/tcp           xrmd_install-frontend-1
+d5add673f488   xrmtech/xrm-director-backend:1.2.1    "uvicorn main:app --…"   6 days ago   Up 24 seconds             0.0.0.0:8001->8001/tcp, [::]:8001->8001/tcp   xrmd_install-backend-1
 ```
 
 
