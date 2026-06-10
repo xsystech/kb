@@ -1056,5 +1056,3 @@ python xrmd_agent_manager.py --send "ERROR 2024-07-12 11:15:26,987 config get 14
 python xrmd_agent_manager.py --send "INFO 2024-07-12 11:16:30,123 User login successful for admin" --agent-title "api_llm_agent" --new-session
 python xrmd_agent_manager.py --send "WARNING 2024-07-12 11:18:00,789 High memory usage detected" --agent-title "api_llm_agent" --new-session
 ```
-
-**Дата обновления:** 29 июля 2025
