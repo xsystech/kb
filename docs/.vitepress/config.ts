@@ -308,7 +308,7 @@ const config = defineConfig({
     },
     footer: {
       message: 'XSYSTECH.RU',
-      copyright: 'Copyright © 2025'
+      copyright: 'Copyright © 2022-2026'
     },
   },
   markdown: {
