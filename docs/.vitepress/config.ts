@@ -18,7 +18,7 @@ const home_sidebar = [
     {text: 'Описание функциональных характеристик', link: '/XRM/datasheet.html' },
     {text: 'Системные требования', link: '/XRM/requirements.html' },
     {text: 'История версий', link: '/XRM/history.html' },
-    {text: 'XRM версия 1.2.2', base: '/XRM/1.2.1/', collapsed: true,
+    {text: 'XRMD-S версия 1.2.2', base: '/XRM/1.2.1/', collapsed: true,
               items: [ 
                 {text: 'Инструкция по установке', link: '/install.html' },
                 {text: 'Руководство пользователя', link: '/user.html' },
@@ -32,8 +32,8 @@ const home_sidebar = [
                 },
                 {text: 'Установка/изменение пароля администратора', link: '/password.html' },
                 {text: 'Установка Docker на российские ОС', link: '/docker.html' },
-                {text: 'Установка XRM на РЕД ОС', link: '/install-redos.html' },
-                {text: 'Удаление XRM', link: '/remove.html' },
+                {text: 'Установка XRMD-S на РЕД ОС', link: '/install-redos.html' },
+                {text: 'Удаление XRMD-S', link: '/remove.html' },
              ]
     }
     ]
@@ -45,7 +45,7 @@ const home_sidebar = [
     {text: 'Описание функциональных характеристик', link: '/XRMD/datasheet.html' },
     {text: 'Системные требования', link: '/XRMD/requirements.html' },
     {text: 'История версий', link: '/XRMD/history.html' },
-    {text: 'XRMD версия 1.2.1', base: '/XRMD/1.1.0/', collapsed: true,
+    {text: 'XRMD-V версия 1.2.1', base: '/XRMD/1.1.0/', collapsed: true,
               items: [ 
                 {text: 'Инструкция по установке', link: '/install.html' },
                 {text: 'Руководство администратора', base: '/XRMD/1.1.0/admin/', collapsed: true,  
@@ -60,7 +60,7 @@ const home_sidebar = [
                 
                 },
                 {text: 'Установка Docker на российские ОС', link: '/docker.html' },
-                {text: 'Удаление XRMD', link: '/remove.html' },
+                {text: 'Удаление XRMD-V', link: '/remove.html' },
              ]
     }
     ]
