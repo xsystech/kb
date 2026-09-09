@@ -12,7 +12,7 @@ const links: Array<{url: string, lastmod?: number}> = []
 
 const home_sidebar = [
   { 
-    text: 'Документация XRM (для серверной виртуализации)',
+    text: 'Документация XRM Director (для серверной виртуализации)',
     collapsed: false,
     items: [
     {text: 'Описание функциональных характеристик', link: '/XRM/datasheet.html' },
@@ -39,7 +39,7 @@ const home_sidebar = [
     ]
   },
   { 
-    text: 'Документация XRM (для VDI)',
+    text: 'Документация XRM Director (для VDI)',
     collapsed: false,
     items: [
     {text: 'Описание функциональных характеристик', link: '/XRMD/datasheet.html' },
@@ -71,7 +71,7 @@ const home_sidebar = [
   
   {
     
-    text: 'Документация ПК Director',
+    text: 'Документация XRM Director (ИИ-ассистент)',
     collapsed: false,
     items: [
       { text: 'Технические характеристики', link: '/datasheet.html' },
