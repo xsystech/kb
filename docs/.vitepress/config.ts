@@ -55,6 +55,7 @@ const home_sidebar = [
                   {text: 'Настройка групп брокеров', link: '/groups.html' },
                   {text: 'Создание и запуск заданий переноса', link: '/jobs.html' },
                   {text: 'Журналы, контроль выполнения и проверка результата', link: '/logs.html' },
+                  {text: 'Управление', link: '/management.html' },
                   {text: 'Руководство по внедрению в среде OpenUDS', link: '/implementation.html' },
                   ]
                 
