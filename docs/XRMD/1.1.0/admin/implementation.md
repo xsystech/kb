@@ -25,19 +25,19 @@ XRM Director автоматизирует этот процесс: систем�
 
 Две независимые инсталляции брокеров на основе OpenUDS. Каждая из них представляет собой отдельную площадку.
 
-<table><thead><tr><th width="192.199951171875">Параметр</th><th>Основная площадка</th><th>Резервная площадка</th></tr></thead><tbody><tr><td>Имя брокера</td><td><strong>Broker1</strong></td><td><strong>Broker2</strong></td></tr><tr><td>Адрес брокера</td><td><strong>https://37.187.132.140:15043/</strong></td><td><strong>https://37.187.132.140:15143/</strong></td></tr><tr><td>Роль</td><td>Primary Broker</td><td>Secondary Broker</td></tr><tr><td>Логин</td><td><strong>admin_test</strong></td><td><strong>admin_test</strong></td></tr><tr><td>Пароль</td><td><strong>testPass123!</strong></td><td><strong>testPass123!</strong></td></tr><tr><td>Authenticator</td><td><strong>admin</strong></td><td><strong>admin</strong></td></tr><tr><td>Сервис-пулы</td><td><strong>testpool</strong>, <strong>test2pool</strong> (Active)</td><td><strong>отсутствуют</strong> (до миграции)</td></tr><tr><td>Группа</td><td><strong>Group 1</strong></td><td><strong>Group 1</strong></td></tr></tbody></table>
+<table><thead><tr><th width="192.199951171875">Параметр</th><th>Основная площадка</th><th>Резервная площадка</th></tr></thead><tbody><tr><td>Имя брокера</td><td><strong>Broker1</strong></td><td><strong>Broker2</strong></td></tr><tr><td>Адрес брокера</td><td><strong>https://192.168.0.88:15043/</strong></td><td><strong>https://192.168.0.89:15043/</strong></td></tr><tr><td>Роль</td><td>Primary Broker</td><td>Secondary Broker</td></tr><tr><td>Логин</td><td><strong>admin_test</strong></td><td><strong>admin_test</strong></td></tr><tr><td>Пароль</td><td><strong>testPass123!</strong></td><td><strong>testPass123!</strong></td></tr><tr><td>Authenticator</td><td><strong>admin</strong></td><td><strong>admin</strong></td></tr><tr><td>Сервис-пулы</td><td><strong>testpool</strong>, <strong>test2pool</strong> (Active)</td><td><strong>отсутствуют</strong> (до миграции)</td></tr><tr><td>Группа</td><td><strong>Group 1</strong></td><td><strong>Group 1</strong></td></tr></tbody></table>
 
 **Основная площадка (Broker1):**
 
 * **Broker1** – основная площадка, на которой развёрнуты продуктивные сервис-пулы;
-* **https://37.187.132.140:15043/** – адрес веб-интерфейса управления;
+* **https://192.168.0.88:15043/** – адрес веб-интерфейса управления;
 * Сервис-пулы: **testpool**, **test2pool** – оба в статусе **Active**;
 * Именно их конфигурацию необходимо перенести на резервную площадку.
 
 **Резервная площадка (Broker2):**
 
 * **Broker2** – «пустая» резервная площадка, подготовленная к принятию конфигурации с основного брокера;
-* **https://37.187.132.140:15143/** – адрес веб-интерфейса управления;
+* **https://192.168.0.89:15043/** – адрес веб-интерфейса управления;
 * Раздел сервис-пулов пуст: testpool и test2pool отсутствуют.
 
 ⚠️ Именно на Broker2 XRM Director выполнит перенос конфигурации в рамках плана восстановления.
@@ -74,9 +74,9 @@ XRM Director автоматизирует этот процесс: систем�
 
 Пример:
 
-`https://37.187.132.140:15043/` (для основного брокера)
+`https://192.168.0.8843/` (для основного брокера)
 
-`https://37.187.132.140:15143/` (для резервного брокера)
+`https://192.168.0.8943/` (для резервного брокера)
 
 </details>
 
