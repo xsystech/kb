@@ -1,5 +1,7 @@
 # Вкладка Управление
 
+> ⚠️ Доступно начиная с версии XRMD 1.2.2
+
 ## Раздел Уведомление пользователей 
 
 <figure><img src="/XRMD/assets/notification1.png" alt=""><figcaption></figcaption></figure>​
