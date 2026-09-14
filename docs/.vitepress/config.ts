@@ -18,11 +18,11 @@ const home_sidebar = [
     {text: 'Описание функциональных характеристик', link: '/XRM/datasheet.html' },
     {text: 'Системные требования', link: '/XRM/requirements.html' },
     {text: 'История версий', link: '/XRM/history.html' },
-    {text: 'XRMD-S версия 1.2.2', base: '/XRM/1.2.1/', collapsed: true,
+    {text: 'XRMD-S (latest)', base: '/XRM/latest/', collapsed: true,
               items: [ 
                 {text: 'Инструкция по установке', link: '/install.html' },
                 {text: 'Руководство пользователя', link: '/user.html' },
-                {text: 'Руководство администратора', base: '/XRM/1.2.1/admin/', collapsed: true,  
+                {text: 'Руководство администратора', base: '/XRM/latest/admin/', collapsed: true,  
                 items: [
                   {text: 'Начальная настройка', link: '/start.html' },
                   {text: 'Создание и запуск планов восстановления', link: '/dr-plans.html' },
@@ -45,10 +45,10 @@ const home_sidebar = [
     {text: 'Описание функциональных характеристик', link: '/XRMD/datasheet.html' },
     {text: 'Системные требования', link: '/XRMD/requirements.html' },
     {text: 'История версий', link: '/XRMD/history.html' },
-    {text: 'XRMD-V версия 1.2.1', base: '/XRMD/1.1.0/', collapsed: true,
+    {text: 'XRMD-V (latest)', base: '/XRMD/latest/', collapsed: true,
               items: [ 
                 {text: 'Инструкция по установке', link: '/install.html' },
-                {text: 'Руководство администратора', base: '/XRMD/1.1.0/admin/', collapsed: true,  
+                {text: 'Руководство администратора', base: '/XRMD/latest/admin/', collapsed: true,  
                 items: [
                   {text: 'Начальная настройка', link: '/start.html' },
                   {text: 'Подключение и управление брокерами', link: '/connect.html' },
